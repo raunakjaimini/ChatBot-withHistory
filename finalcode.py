@@ -9,7 +9,6 @@ load_dotenv()
 # Configure Streamlit page settings
 st.set_page_config(
     page_title="ChatBot",
-    page_icon=":brain:",  # Favicon emoji
     layout="centered",  # Page layout option
 )
 
@@ -69,7 +68,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Display the chatbot's title on the page
-st.title("Chat-Mate...Lets Chat Brother")
+st.title("Chat-Mate...")
 
 # Create a container for the chat messages
 chat_container = st.container()
@@ -84,7 +83,7 @@ with chat_container:
         )
 
 # Input field for user's message
-user_prompt = st.chat_input("Ask....")
+user_prompt = st.chat_input("Ask anything..")
 if user_prompt:
     # Add user's message to chat and display it
     st.markdown(
